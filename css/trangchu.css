@@ -1,0 +1,343 @@
+*{
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+
+								/*nền*/
+body {
+  	padding: 0%;
+  	text-align: center;
+  	background: rgb(0,0,0);
+	background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(255,110,110,1) 100%);
+}
+								/*end nền*/
+
+
+								/*header*/
+.container{
+	width: 100%;
+	height: 80%;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.header{
+	text-align: center;
+	padding-top: 20px;
+}
+
+.header img{
+	max-height: 80%;
+	max-height: 80%;
+}
+
+.text{
+	position: absolute;
+	top: 100px;
+	left: 100px;
+	right: 100px;
+	font-size: 50px;
+	margin-top: 40px;
+}
+
+.menu ul{
+	border-top: 1px solid #e1e1e1;
+	border-bottom: 1px solid #e1e1e1;
+	list-style-type: none;
+	text-align: center;
+	width: 100%;
+	height: 50px;
+	color: red;
+}
+
+.menu li{
+	display: inline-block;
+	font-size: 10px;
+	height: 50px;
+	line-height: 50px;
+	font-weight: bold;
+}
+
+.menu li a{
+	text-decoration: none;
+	text-align: center;
+	padding: 0 30px;
+	color: black;
+}
+								/*end header*/
+
+
+
+								/*slide ảnh*/
+#slideshow {
+  overflow: hidden;
+  height: 667px;
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.slide-wrapper {
+  width: 4000px;
+  -webkit-animation: slide 14s ease infinite;
+}
+
+.slide {
+  float: left;
+  height: 667px;
+  width: 1000px;
+}
+
+
+@-webkit-keyframes slide {
+  20% {margin-left: 0px;}
+  30% {margin-left: -1000px;}
+  50% {margin-left: -1000px;}
+  60% {margin-left: -2000px;}
+  80% {margin-left: -2000px;}
+}
+								/*end slide ảnh*/
+
+								
+
+
+
+
+
+                /*text*/
+.text1{
+           margin-top:25px;
+           margin-right:460px;
+           margin-bottom:100px;
+           margin-left:460px;
+           color: white;
+}
+
+                /*end text*/
+
+
+
+
+
+
+                /*footer*/
+
+.footer--top-container {
+  padding-left: 14px ;
+  padding-right: 14px ;
+  max-width: 1360px;
+  height: 437px;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+}
+
+.block {
+  height: 80%;
+  margin-top: auto;
+}
+
+
+ul{
+  list-style-type: none;
+}
+.block span {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.block a {
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 30px;
+}
+
+.block li:first-child{
+  margin-bottom: 10PX;
+
+}
+
+.footer--bottom-container {
+  padding-left: 14px ;
+  padding-right: 14px ;
+  max-width: 1360px;
+  height: 112px;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  align-items: center;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer--title-copyright h3 {
+  color: white;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serifh;
+}
+
+.footer-icon {
+  width: 15%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-icon .icon{   margin-right: 5px;
+    color: white;
+    font-size: 30px;}
+
+.block-Career .input input {
+  width: 100%;
+  height: 38px;
+  margin-top: 15px;
+  padding-left: 10px;
+}
+
+.input input {
+  width: 237px;
+  height: 39px;
+  border: 1px solid #000000;
+  padding-left: 10px;
+}
+
+.button--send-red button {
+  margin-top: 15px;
+  background-color: #ff0000;
+  border-radius: 30px;
+  border: none;
+  width: 102px;
+  height: 33px;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+}
+.footer-icon-responsive{
+  display: none;
+}
+.footer--line {
+  background-color: #fffbfb;
+  max-width: 60%;
+  height: 1px;
+  margin: auto;
+}
+
+.dropDown{
+  display: none;
+  transition: drop 300ms ease-in-out forwards;
+}
+
+.dropDown a{
+  color: black;
+}
+
+/* effect style */
+.icon-close, .header--menu, .header--logo, .icon{
+    cursor: pointer;
+}
+
+
+.fa-bars:hover ,.fa-search:hover, .fa-shopping-cart:hover,.fa-user:hover{
+  color: #ff0000;
+  transition: all 0.3s ease-in-out;
+}
+
+.block a:hover, .cokeDes-block-name h3:hover{
+  color: #ff0000;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.menu-block a:hover{
+  color: #ff0000;
+  transition: all 0.3s ease-in-out;
+}
+.footer-icon .icon:hover,.footer-icon-responsive .icon:hover{
+  color: red;
+}
+
+.button--send-red button:hover{
+  background-color: blue;
+}
+
+/* responsive */
+
+@media only screen and (max-width: 926px){
+  .menu-wrapper-web{
+    display: none;
+  }
+
+  .header--menu{
+    display: flex;
+  }
+
+  .header--icon{
+    width: 15%;
+  }
+
+  .header--logo{
+    width: 5%;
+  }
+}
+
+
+@media only screen and (max-width: 800px){
+  .overlay-grey{
+    width: 20%;
+    margin-left: 80% ;
+  }
+  .block{
+    width: 46%;
+    height: 30%;
+    margin-top: 50px ;
+    margin-bottom: 50px ;
+    text-align: center;
+  }
+  .footer--top-container{
+    flex-wrap:wrap ;
+    justify-content: space-evenly;
+    height: 550px;
+  }
+  .footer--line{
+    margin-top: 100px ;
+  }
+  .footer--bottom-container{
+    margin-top: 20px;
+    display: block;
+    text-align: center;
+  }
+
+ 
+
+  footer{
+    height: 800px;
+  }
+
+  h1{
+        font-size: 24px;
+    }
+
+    h2{
+        font-size: 20px;
+    }
+
+    h3{
+        font-size: 14px;
+    }
+    .block span{
+        font-size: 14px;
+    }
+
+    .block a{
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 500px){
+  .header--icon{
+    width: 25%;
+  }
+}
+                /*end footer*/
