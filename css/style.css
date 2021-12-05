@@ -14,7 +14,7 @@ body {
   margin: 0;
 }
 
-.container {
+.slideanh {
   display: flex;
   width: 90vw;
 }
@@ -52,7 +52,7 @@ body {
 }
 
 @media (max-width: 480px) {
-  .container {
+  .slideanh {
     width: 100vw;
   }
 
