@@ -7,9 +7,11 @@
 
 
 
+			
 .slideanh {
   display: flex;
   width: 90vw;
+  margin-top: 200px;
 }
 
 .panel {
