@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+
+.baiviet {
+	margin:0;
+	padding:0;
+	background:#fff url(images/body_bg.gif) top repeat-x;
+}
+
+.baiviet h2 {
+	font:normal 30px Arial, Helvetica, sans-serif;
+	color:#464646;
+	padding:5px;
+	margin:0 0 10px 0;
+}
+
+.bentrai {
+	float:left;
+	width:630px;
+	margin:0;
+	padding:0 0 20px 0;
+}
+
+.baiviet img.floated {
+	float:left;
+	margin:5px 10px 5px 0;
+	padding:0;
+}
