@@ -30,3 +30,12 @@
 	margin:5px 10px 5px 0;
 	padding:0;
 }
+
+li.bg, .bg {
+	clear:both;
+	border-bottom:1px dashed #818181;
+	padding:0;
+	margin:10px 0;
+	background:none;
+	list-style:none;
+}
