@@ -39,34 +39,7 @@
 }
  
  
-    li{
-        width: 150px;
-        text-align: center; 
-    }
-    .navbardacap > ul{
-        height: 40px;
-    }
-    .navbardacap > ul > li{
-        display: inline-block;
-        border-right: 1px solid #dddddd;
-        position: relative;
-    }
-    .navbardacap > ul > li > ul {
-        display: none; /*thêm*/
-        position: absolute;
-        top: 15px;
-    }
-    .navbardacap > ul > li > ul li{
-        padding: 5px 0;
-        border-bottom: 1px solid #dddddd;
-    }
-    ul li:last-child{
-        border: none;
-    }
-    /*thêm*/
-    .navbardacap ul li:hover ul{
-        display: block;
-    }
+   
  
  
  
