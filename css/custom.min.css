@@ -22,38 +22,7 @@
  
  
  
- ul{
-        margin: 0;
-        padding: 0;
-        padding-top: 13px;
-        list-style: none;
-        background-color: green;
-    }
-    li{
-        width: 150px;
-        text-align: center; 
-    }
-    .main-nav > ul{
-        height: 40px;
-    }
-    .main-nav > ul > li{
-        display: inline-block;
-        border-right: 1px solid #dddddd;
-        position: relative;
-    }
-    .main-nav > ul > li > ul {
-        display: none; /*thêm*/
-        position: absolute;
-        top: 15px;
-    }
-    .main-nav > ul > li > ul li{
-        padding: 5px 0;
-        border-bottom: 1px solid #dddddd;
-    }
-    ul li:last-child{
-        border: none;
-    }
-    /*thêm*/
+
     .main-nav ul li:hover ul{
         display: block;
     }
