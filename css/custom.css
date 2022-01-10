@@ -105,7 +105,15 @@ header .header-content .header-content-inner p {
     padding: 25px 0;
 }
 
+.content1 {
+    padding: 25px 0;
+    color: #fff;
+    background-color: #222;
+}
+
+
 .content-2 {
+    padding: 25px 0;
 	color: #fff;
     background-color: #222;
 }
