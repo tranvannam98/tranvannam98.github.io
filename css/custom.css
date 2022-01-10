@@ -103,12 +103,14 @@ header .header-content .header-content-inner p {
 
 .content {
     padding: 25px 0;
+    color: #fff;
+    background-color: #54786A;
 }
 
 .content1 {
     padding: 25px 0;
     color: #fff;
-    background-color: #222;
+    background-color: #DED18D;
 }
 
 
@@ -198,7 +200,16 @@ header .header-content .header-content-inner p {
 	}
 
 .text-light {
-    color: rgba(255,255,255,.7);
+    color: white;
+}
+
+.text-mota {
+    color: black;
+}
+
+
+.section-header1{
+    color: black;
 }
 
 .navbar-default {
