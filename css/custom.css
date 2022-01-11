@@ -435,7 +435,7 @@ img::-moz-selection {
 
 
 /*Post 1*/
-.text-mota2 {
+.text-mota1 {
     color: black;/*màu chữ của mô tả post*/
 }
 
@@ -455,7 +455,7 @@ img::-moz-selection {
 }
 
 /*Post 2*/
-.text-mota1 {
+.text-mota2 {
     color: white;/*màu chữ của mô tả post*/
 }
 
