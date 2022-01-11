@@ -101,17 +101,10 @@ header .header-content .header-content-inner p {
     text-align: center;
 }
 
-.content {
-    padding: 25px 0;
-    color: #fff;
-    background-color: #54786A;
-}
 
-.content1 {
-    padding: 25px 0;
-    color: #fff;
-    background-color: #DED18D;
-}
+
+
+
 
 
 .content-2 {
@@ -199,13 +192,7 @@ header .header-content .header-content-inner p {
 	font-weight: 300;
 	}
 
-.text-light {
-    color: white;
-}
 
-.text-mota {
-    color: black;
-}
 
 
 .section-header1{
@@ -303,14 +290,8 @@ header .header-content .header-content-inner p {
     }
 }
 
-.btn-default {
-    border-color: #fff;
-    color: #222;
-    background-color: #fff;
-    -webkit-transition: all .35s;
-    -moz-transition: all .35s;
-    transition: all .35s;
-}
+
+
 
 .btn-default:hover,
 .btn-default:focus,
@@ -356,14 +337,7 @@ fieldset[disabled] .btn-default.active {
     background-color: #222;
 }
 
-.btn-primary {
-    border-color: yellowgreen;
-    color: #fff;
-    background-color: yellowgreen;
-    -webkit-transition: all .35s;
-    -moz-transition: all .35s;
-    transition: all .35s;
-}
+
 
 .btn-primary:hover,
 .btn-primary:focus,
@@ -452,3 +426,50 @@ img::-moz-selection {
 
 
 
+
+
+
+
+
+
+
+
+/*Post 1*/
+.text-mota2 {
+    color: black;/*màu chữ của mô tả post*/
+}
+
+.content {
+    padding: 25px 0;/*khoảnh cách với lề*/
+    color: #fff;/*màu sắc chữ tiêu đề post*/
+    background-color: #54786A;/*nền của post*/
+}
+
+.btn-primary {
+    border-color: yellowgreen;/*màu viền nút xem thêm*/
+    color: #fff;/*màu chữ của nút xem thêm*/
+    background-color: yellowgreen;/*màu nút xem thêm*/
+    -webkit-transition: all .35s;
+    -moz-transition: all .35s;
+    transition: all .35s;
+}
+
+/*Post 2*/
+.text-mota1 {
+    color: white;/*màu chữ của mô tả post*/
+}
+
+.content1 {
+    padding: 25px 0;/*khoảnh cách với lề*/
+    color: #fff;/*màu sắc chữ tiêu đề post*/
+    background-color: #DED18D;/*nền của post*/
+}
+
+.btn-default {
+    border-color: #fff;/*màu viền nút xem thêm*/
+    color: #222;/*màu chữ của nút xem thêm*/
+    background-color: #fff;/*màu nút xem thêm*/
+    -webkit-transition: all .35s;
+    -moz-transition: all .35s;
+    transition: all .35s;
+}
