@@ -526,55 +526,94 @@ img::-moz-selection {
 
 
 
-.wrapper1 {
- max-width: 960px;
- margin: 10% auto;
- text-align: center;
- line-height: 2em;
+.wrapper1{
+  position: absolute;
+  max-width: 480px;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  padding: 40px 30px;
+  background: #fff;
+  border-radius: 15px;
+  opacity: 0;
+  pointer-events: none;
+  transform: translate(-50%, -50%) scale(1.2);
+  box-shadow: 10px 10px 15px rgba(0,0,0,0.06);
+  transition: opacity 0.2s 0s ease-in-out,
+              transform 0.2s 0s ease-in-out;
 }
-    
-.button1 {
- border: 3px solid #111;
- adding: 10px;
- color: #111;
- text-decoration: none;
+.wrapper1.show1{
+  opacity: 1;
+  pointer-events: auto;
+  transform:translate(-50%, -50%) scale(1);
 }
-    
-
-.popup1 {
- position: fixed;
- width: 100%;
- height: 100%;
- top: 0;
- left: 0;
- background: rgba(0,0,0,0.6);
- display: none;
+.wrapper1 .content1,
+.content1 .warn-icon1,
+.warn-icon1 .icon1{
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-
-#xmas-popup1 .popup-content1{
- width: 600px;
- height: 600px;
- background: #bbb;
- margin: 100px auto;
- position: relative;
- border: 5px solid #fff;
+.wrapper1 .content1{
+  flex-direction: column;
 }
-
-.close1 {
- position: absolute;
- top: 5px;
- right: 5px;
- border-radius: 50%;
- background: #222;
- border: 3px solid #fff;
- color: #fff;
- text-decoration: none;
- line-height: 0;
- padding: 9px 0 11px;
- width: 20px;
- text-align: center;
+.content1 .warn-icon1{
+  height: 115px;
+  width: 115px;
+  border-radius: 50%;
+  background: linear-gradient(#9b27ca 0%, #9927cf 0%, #d33639 100%, #f92121 100%);
 }
-    
-.popup1:target {
-  display: block;
+.warn-icon1 .icon1{
+  height: 100px;
+  width: 100px;
+  background: #fff;
+  border-radius: inherit;
 }
+.warn-icon1 .icon1 i{
+  background: linear-gradient(#9b27ca 0%, #9927cf 0%, #d33639 100%, #f92121 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 50px;
+}
+.content1 h2{
+  margin-top: 35px;
+  font-size: 32px;
+}
+.content1 p{
+  font-size: 19px;
+  text-align: center;
+  margin-top: 20px;
+}
+.btn1{
+  height: 57px;
+  width: 223px;
+  margin-top: 30px;
+  border-radius: 50px;
+  position: relative;
+  overflow: hidden;
+}
+.btn1 .bg-layer1{
+  height: 100%;
+  width: 300%;
+  position: absolute;
+  left: -100%;
+  background: -webkit-linear-gradient(135deg, #9b27ca, #d33639, #9b27ca, #d33639);
+  transition: all 0.4s ease;
+}
+.btn1:hover .bg-layer1{
+  left: 0;
+}
+.content1 button{
+  position: relative;
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+  background: none;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  color: #fff;
+  cursor: pointer;
+}
+That’s all, now you’ve 
