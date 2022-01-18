@@ -12,7 +12,7 @@
 </head>
 <body>
 
-    
+
     <!-- Navigation -->
     <nav id="siteNav" class="navbar navbar-default navbar-fixed-top" role="navigation">
         <div class="container">
@@ -77,23 +77,36 @@
 
 
 <!-- popup code -->
-            <div id="xmas-popup1" class="popup1" href="#">
-                <div class="popup-content1">
-                    <img src="popup.jpg" alt="xmas-sale" />
-                    <a href="#" class="close1">x</a>
-                </div>
-            </div>
-    
-
-            <!-- normal page code -->
-            <div class="wrapper1">
-                <h1>Cảnh Báo</h1>
-                <p>
-                    Bạn đã đủ 18 tuổi chưa?
-                </p>
-                <a href="#xmas-popup" class="button1">Rồi</a>
-                <a href="https://tranvannam98.github.io" class="button1">Chưa</a>
-            </div>
+    <div id="detect1"></div>
+  <div class="wrapper1">
+    <div class="content1">
+      <div class="warn-icon1">
+        <span class="icon1"><i class="fas fa-exclamation1"></i></span>
+      </div>
+      <h2>AdBlock Detected!</h2>
+      <p>Our website is made possible by displaying ads to our visitors. Please supporting us by whitelisting our website.</p>
+      <div class="btn1">
+        <div class="bg-layer1"></div>
+        <button>Okay, I'll Whitelist</button>
+      </div>
+    </div>
+  </div>
+  <script>
+    const detect = document.querySelector("#detect1");
+    const wrapper = document.querySelector(".wrapper1");
+    const button = wrapper.querySelector("button1");
+    let adClasses = ["ad", "ads", "adsbox", "doubleclick", "ad-placement", "ad-placeholder", "adbadge", "BannerAd"];
+    for(let item of adClasses){
+      detect.classList.add(item);
+    }
+    let getProperty = window.getComputedStyle(detect).getPropertyValue("display");
+    if(!wrapper.classList.contains("show")){
+      getProperty == "none" ? wrapper.classList.add("show") : wrapper.classList.remove("show");
+    }
+    button.addEventListener("click", ()=>{
+      wrapper.classList.remove("show");
+    });
+  </script>
 
 
 
