@@ -77,36 +77,17 @@
 
 
 <!-- popup code -->
-    <div id="detect1"></div>
-  <div class="wrapper1">
-    <div class="content1">
-      <div class="warn-icon1">
-        <span class="icon1"><i class="fas fa-exclamation1"></i></span>
-      </div>
-      <h2>AdBlock Detected!</h2>
-      <p>Our website is made possible by displaying ads to our visitors. Please supporting us by whitelisting our website.</p>
-      <div class="btn1">
-        <div class="bg-layer1"></div>
-        <button>Okay, I'll Whitelist</button>
-      </div>
+    <div class="popup">
+        <button id="close">&times;</button>
+        <h2>Cảnh Báo!</h2>
+        <p>
+            Bạn đã đủ 18 tuổi chưa?
+        </p>
+        <a href="#">Đủ rồi</a>
+        <a href="https://tranvannam98.github.io">Chưa đủ</a>
     </div>
-  </div>
-  <script>
-    const detect = document.querySelector("#detect1");
-    const wrapper = document.querySelector(".wrapper1");
-    const button = wrapper.querySelector("button1");
-    let adClasses = ["ad", "ads", "adsbox", "doubleclick", "ad-placement", "ad-placeholder", "adbadge", "BannerAd"];
-    for(let item of adClasses){
-      detect.classList.add(item);
-    }
-    let getProperty = window.getComputedStyle(detect).getPropertyValue("display");
-    if(!wrapper.classList.contains("show")){
-      getProperty == "none" ? wrapper.classList.add("show") : wrapper.classList.remove("show");
-    }
-    button.addEventListener("click", ()=>{
-      wrapper.classList.remove("show");
-    });
-  </script>
+    <!--Script-->
+    <script src="script.js"></script>
 
 
 
